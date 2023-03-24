@@ -1,6 +1,6 @@
 {
  "name": "Yukino-bot",
- "description": "Multi Device Whatsapp Bot By Kai",
+ "description": "Multi Device Whatsapp Bot By Empty-sama",
  "version": "3.0.0",
  "main": "index.js",
  "type": "commonjs",
@@ -17,7 +17,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Kai (Kai0071)",
+ "author": "Empty-sama",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.4.0",
@@ -102,10 +102,10 @@
  },
  "repository": {
   "type": "git",
-  "url": "git+https://github.com/Sparkymon777/SPARKY-BOT-MD.git"
+  "url": "git+https://github.com/Empty-sama/Yukino.git"
  },
  "bugs": {
-  "url": "https://github.com/Sparkymon777/SPARKY-BOT-MD/issues"
+  "url": "https://github.com/Empty-sama/Yukino/issues"
  },
- "homepage": "https://github.com/Sparkymon777/SPARKY-BOT-MD#readme"
+ "homepage": "https://github.com/Empty-sama/Yukino#readme"
 }
