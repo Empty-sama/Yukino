@@ -1,8 +1,3 @@
-<p align="center">
-   <a href="https://github.com/Kai0071">
-    <img src="https://media1.giphy.com/media/XqVUeEK5Lt3VOGEzJj/giphy.gif" width="610">
-     
-</p>
 <h1 align="center"> 🎀Yukino Yukinoshita🎀
 </h1>
 <p align="center"> 
