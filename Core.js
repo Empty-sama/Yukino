@@ -6016,4 +6016,3 @@ delete require.cache[file]
 require(file)
 })
 
-.listen(process.config.Port || 5000)
