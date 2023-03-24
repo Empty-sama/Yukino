@@ -20,6 +20,7 @@ global.OwnerName = "Empty-sama Sir🚀🌟"
 global.BotSourceCode = "https://github.com"
 global.SupportGroupLink = "https://chat.whatsapp.com/"
 global.sessionName = "session"
+global.Port = "7575"
 
 // Prefix //
 // If you want to change the prefix, change it and also change all switch's button id from Core.js  otherwise buttons will not work //
