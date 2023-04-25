@@ -3,7 +3,7 @@
 <p align="center"> 
   Good day. I am Yukino Yukinoshita, A whatsapp Multi Device Bot Developed by [Empty-sama](https://github.com/Empty-sama/). I have many uses plus functions that you can use after deploying me
    <p align="center"> 
-  <a href="https://github.com/Kai0071/Yukino/stargazers">
+  <a href="https://github.com/sama0071/Yukino/stargazers">
     <img src="https://telegra.ph/file/8c4331546464a7971e528.jpg">
     
    <p align="center">
@@ -166,7 +166,7 @@ Comment out/delete /* , */ the code form your Core.js line 224,332 in your own r
 </br></br>
 <h1 align="center">  ⚡ Spacial Thanks To ⚡
 </h1>
-* [🧩Kai for A17](https://github.com/Kai0071)
+* [🧩Kai for A17](https://github.com/sama0071)
 
 <h2 align="center"> ✧ Join My Whatsapp Group for Support ✧
 </h2>

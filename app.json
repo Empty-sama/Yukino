@@ -1,7 +1,7 @@
 {
   "name": "Yukino",
   "description": "A whatsApp bot based on Baileys linrary with Multi Device support",
-  "repository": "https://github.com/Kai0071/Yukino-Bot",
+  "repository": "https://github.com/sama0071/Yukino-Bot",
   "logo": "https://wallpapercave.com/wp/wp10524580.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [

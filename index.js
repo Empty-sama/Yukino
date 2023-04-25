@@ -76,9 +76,9 @@ Yukino.ev.on('groups.update', async pea => {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       Yukino.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `${BotName}`, wm_fatih, [])
+       Yukino.send5ButImg(pea[0].id, `Group has been *Closed!* Only *Admins* can send Messages!`, `${BotName}`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       Yukino.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `${BotName}`, wm_fatih, [])
+       Yukino.send5ButImg(pea[0].id, `Group has been *Opened!* Now *Everyone* can send Messages!`, `${BotName}`, wm_fatih, [])
        } else {
        Yukino.send5ButImg(pea[0].id, `Group Subject has been updated to *${pea[0].subject}*`, `${BotName}`, wm_fatih, [])
      }
@@ -95,11 +95,11 @@ Yukino.ev.on('groups.update', async pea => {
         }
         let wm_fatih = { url : ppgc }
         if (pea[0].announce == true) {
-        //Yukino.send5ButImg(pea[0].id, `Grop has been *Closed!* Only *Admins* can send Messages!`, `Yukino Bot`, wm_fatih, [])
+        //Yukino.send5ButImg(pea[0].id, `Group has been *Closed!* Only *Admins* can send Messages!`, `Yukino Bot`, wm_fatih, [])
 
         Yukino.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Closed!* Only *Admins* can send Messages!'})
         } else if(pea[0].announce == false) {
-       // Yukino.send5ButImg(pea[0].id, `Grop has been *Opened!* Now *Everyone* can send Messages!`, `Yukino Bot`, wm_fatih, [])
+       // Yukino.send5ButImg(pea[0].id, `Group has been *Opened!* Now *Everyone* can send Messages!`, `Yukino Bot`, wm_fatih, [])
        Yukino.sendMessage(m.chat, { image: wm_fatih, caption: 'Grop has been *Opened!* Now *Everyone* can send Messages!'})
         } else if (pea[0].restrict == true) {
         //Yukino.send5ButImg(pea[0].id, `Group Info modification has been *Restricted*, Now only *Admins* can edit Group Info !`, `Yukino Bot`, wm_fatih, [])
@@ -170,7 +170,7 @@ Yukino.sendMessage(anu.id, buttonMessage)
                     Yukinotext = `
 Okay Bye 👋, @${WAuserName.split("@")[0]},
 
-I hope you will come back soon, but You will be missed!
+You will indeed not be missed, Cya!
 `
 
     let buttonMessage = {

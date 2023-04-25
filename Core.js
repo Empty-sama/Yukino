@@ -51,8 +51,8 @@ const xfarrapi = require('xfarr-api')
 const { hentai } = require('./lib/scraper2.js')
 let { msgFilter } = require('./lib/antispam')
 const { mediafireDl } = require('./lib/mediafire.js')
-const kaitime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const kaidate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const samatime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
+const samadate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')
 
         if(time2 < "23:59:00"){
@@ -777,8 +777,8 @@ user.afkReason = ''
 
 
 if (m.mtype === 'groupInviteMessage') {
-teks = `I can't join the group untill my *Owner* ask me to join. Type *-owner* to get owner number and ask him.`
-sendOrder(m.chat, teks, "5123658817728409", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "27729378630@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
+teks = `I can't join the group untill my *Owner* ask me to join. Type *${prefix}owner* to get owner number and ask him.`
+sendOrder(m.chat, teks, "27729378630", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "27729378630@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
 }
 
 
@@ -1984,7 +1984,6 @@ case'slot': case 'spin': {
     if (isBanChat) return replay(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
     var today = new Date();
-if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
     if (text == 'help') return replay(`*1:* Use ${prefix}slot to play\n\n*2:* You must have 💎100 in your wallet\n\n*3:* If you don't have money in wallet then withdraw from your bank\n\n*4:* If you don't have money in your bank too then use economy features to gain money`)
     if (text == 'money') return replay(`*1:* Small Win --> +💎20\n\n*2:* Small Lose --> -💎20\n\n*3:* Big Win --> +💎100\n\n*4:* Big Lose --> -💎50\n\n*5:* 🎉 JackPot --> +💎1000`)
     const fruit1= ["🥥", "🍎", "🍇"]
@@ -2039,9 +2038,6 @@ if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
     else { 
             replay(`Do you understand what you are doing?`)
     }
- }
- else{
-        replay(`*You can only play this game during weekends*\n\n*🌿 Friday*\n*🎏 Saturday*\n*🎐 Sunday*`)
  }
 }
 break
@@ -3491,7 +3487,7 @@ let mentioned = participants.map(v => v.jid)
      fs.unlinkSync(rname)
      })
      } else {
-     reply("Please send video/audio file only!")
+     reply("Please send /audio file only!")
      }
      }
      break
@@ -3771,7 +3767,7 @@ case 'lava': case 'rock': case 'bloodglas': case 'hallowen': case 'darkgold': ca
              if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
              if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
              let anu = await maker.textpro(link, q)
-                Yukino.sendMessage(m.chat, { image: { url: anu }, caption: `Made by Yukino Bot By ash...  🪄` }, { quoted: m })
+                Yukino.sendMessage(m.chat, { image: { url: anu }, caption: `Made by Yukino Bot By EMPTY  🪄` }, { quoted: m })
              }
 
 break
@@ -3989,7 +3985,7 @@ case 'twitterxx': case 'twdlxx': case 'twmp4xx': {
 if (isBanChat) return reply(mess.bangc)
 if (!args[0]) return reply(`Example :\n${prefix + command} https://twitter.com/cinema21/status/1517754155644821504?t=rUnbyqwh4vAE1QXMXlsVeQ&s=19`)
 try {
-let lotwit = await aiovideodl(args[0])
+let lotwit = await aiodl(args[0])
 teks = `「 _Twitter Downloader_ 」
 Caption : ${lotwit.title ? lotwit.title : "undefined"}
 Type : ${lotwit.medias[1].extension}
@@ -4188,7 +4184,7 @@ case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
  if(!text) return Yukino.sendMessage(from,{text:"Pls enter song name to play!"},{quoted:m})
  let yts = require("@adiwajshing/keyed-db2")
  let search = await yts(text)
- let anu = search.videos[0]
+ let anu = search.s[0]
  let buttons = [
  {buttonId: `${prefix}ytad ${text}`, buttonText: {displayText: '♫ Audio'}, type: 1},
  {buttonId: `${prefix}ytvd ${text}`, buttonText: {displayText: '► Video'}, type: 1}
@@ -4474,7 +4470,7 @@ case 'handsomecheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
 	Yukino.sendMessage(from, { react: { text: "😺" , key: m.key }})
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Kai`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @sama`)
 					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
 Yukino.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*` }, { quoted: m })
@@ -4482,7 +4478,7 @@ Yukino.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}
 case 'beautifulcheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Kai`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @sama`)
 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
 Yukino.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
@@ -4501,7 +4497,7 @@ case 'awesomecheck':
                         if (isBanChat) return reply(mess.bangc)
 		Yukino.sendMessage(from, { react: { text: "😺" , key: m.key }})
 		
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Kai`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @sama`)
 					const sangeh = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
 Yukino.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
@@ -4513,7 +4509,7 @@ case 'charactercheck':
     if (isBanChat) return reply(mess.bangc)
 	Yukino.sendMessage(from, { react: { text: "🤧" , key: m.key }})
 	
-					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Kai`)
+					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @sama`)
 					const Yukinotttt =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = Yukinotttt[Math.floor(Math.random() * Yukinotttt.length)]
 					Yukino.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
@@ -5612,7 +5608,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 Yukino.sendMessage(from, { react: { text: "✨" , key: m.key }})      
-const helpmenu = `(🤍ω🤍) Konnichiwa *${pushname}* Sempaii! ${ucapanWaktu} ,
+const helpmenu = (`(🤍ω🤍) Konnichiwa *${pushname}* Sempaii! ${ucapanWaktu} ,
 
 │───────────────────────│
 ┠❖│▸ ${pushname} Watashi wa *${BotName}*, a Bot Developed by *Empty-Senpai*.
@@ -5622,8 +5618,8 @@ const helpmenu = `(🤍ω🤍) Konnichiwa *${pushname}* Sempaii! ${ucapanWaktu} 
 │╰────────────────···▸
 │╭────────────────···▸
 ┴│▸ 
-▓│▸ *Time* : ${kaitime}
-▓│▸ *Date* : ${kaidate}
+▓│▸ *Time* : ${samatime}
+▓│▸ *Date* : ${samadate}
 ┬│▸
 │╰────────────────···▸
 ┠───═[ *BOT INFO* ]═──▸
@@ -5794,10 +5790,10 @@ const helpmenu = `(🤍ω🤍) Konnichiwa *${pushname}* Sempaii! ${ucapanWaktu} 
 ❖┋▸ ⚡ To use any of these commands type 
 ❖┋▸ " *${prefix}<Command name>* ".
 ❖┋▸
-❖┋▸ ✉ To get Support Group link type " *${prefix}support* ".`
+❖┋▸ ✉ To get Support Group link type " *${prefix}support* ".`)
     
 
- let buttonshelpm = [
+ /**let buttonshelpm = [
     {buttonId: `${prefix}owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
     ]
                 let buttonMessage = {
@@ -5809,7 +5805,10 @@ const helpmenu = `(🤍ω🤍) Konnichiwa *${pushname}* Sempaii! ${ucapanWaktu} 
                     
                 }
             Yukino.sendMessage(m.chat, buttonMessage,{ quoted:m })
-                }
+                }*/
+const hmv = fs.readFileSync('./system/Yukino.mp4')
+Yukino.sendMessage(m.chat, hmv, helpmenu)
+            }
 break
  
 
@@ -5818,13 +5817,10 @@ case '':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     Yukino.sendMessage(from, { react: { text: "✨" , key: m.key }})
-
-      Yukinopic ='https://images5.alphacoders.com/106/1065278.jpg'
-    
-        
- const needhelpmenu = `Well ${pushname}, you used my prefix...May I help you? If yes, use *${prefix}help* to get started.`
+         
+  const needhelpmenu = reply(`Well ${pushname}, you used my prefix...May I help you? If yes, use *${prefix}help* to get started.`)
      
-         let butRun = [
+/**        let butRun = [
                 {buttonId: `${prefix}help`, buttonText: {displayText: 'Help'}, type: 1}
                 ]
                 let buttonMessage = {
@@ -5836,6 +5832,13 @@ case '':
                 }
             Yukino.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
+break*/
+
+const dynh = fs.readFileSync('./system/Yukino_1.mp4')
+Yukino.sendMessage(m.chat,{video: dynh, gifPlayback:true, caption: needhelpmenu},{ quoted:m }).catch(err => {
+    return reply('error..')
+            })
+    }
 break
 
 case 'core': case 'c-help': case 'h1':{
