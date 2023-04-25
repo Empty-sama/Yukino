@@ -1,7 +1,8 @@
 <h1 align="center"> 🎀Yukino Yukinoshita🎀
 </h1>
 <p align="center"> 
-  ***Good day. I am Yukino Yukinoshita, A whatsapp Multi Device Bot Developed by [Empty](https://github.com/Empty-sama/Empty-sama). I have many uses plus functions that you can use after deploying me***
+***Good day. I am Yukino Yukinoshita, A whatsapp Multi Device Bot Developed by [Empty-sama](https://github.com/Empty-sama/Empty-sama). I have many uses plus functions that you can use after deploying me***
+  </br>
    <p align="center"> 
   <a href="https://github.com/sama0071/Yukino/stargazers">
     <img src="https://telegra.ph/file/8c4331546464a7971e528.jpg">
